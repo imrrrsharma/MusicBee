@@ -117,3 +117,13 @@ document.getElementById('previous').addEventListener('click', ()=>{
     masterPlay.classList.remove('fa-play-circle');
     masterPlay.classList.add('fa-pause-circle');
 })
+
+audioElement.addEventListener('ended',function(){
+    audioElement.src = `songs/${songIndex+2}.mp3`;
+    masterSongName.innerText = songs[songIndex+1].songName;
+    audioElement.currentTime = 0;
+    audioElement.load();
+    audioElement.play();
+    masterPlay.classList.remove('fa-play-circle');
+    masterPlay.classList.add('fa-pause-circle');
+})
