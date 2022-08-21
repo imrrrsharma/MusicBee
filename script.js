@@ -30,6 +30,9 @@ let songs = [
     {songName: "Tera Fitoor", filePath: "songs/18.mp3", coverPath: "covers/18.jpg"},
     {songName: "Tu Jaane Na", filePath: "songs/19.mp3", coverPath: "covers/19.jpg"},
     {songName: "Jeena Jeena", filePath: "songs/20.mp3", coverPath: "covers/20.jpg"},
+    {songName: "Kisi Ki Muskurahaton Pe", filePath: "songs/21.mp3", coverPath: "covers/21.jpg"},
+    {songName: "Main Shayar To Nahi", filePath: "songs/22.mp3", coverPath: "covers/22.jpg"},
+    {songName: "Meri Mehbooba", filePath: "songs/23.mp3", coverPath: "covers/23.jpg"},
 ]
 
 songItems.forEach((element, i)=>{ 
@@ -88,7 +91,7 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
 })
 
 document.getElementById('next').addEventListener('click', ()=>{
-    if(songIndex>=19){
+    if(songIndex>=22){
         songIndex = 0
     }
     else{
